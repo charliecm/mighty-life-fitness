@@ -1,0 +1,731 @@
+/**
+ * Main Stylesheet
+ * ---
+ * 1. Base
+ * 2. Utilities
+ * 3. Sidebar
+ * 4. Content
+ * 5. Navigation (style guide)
+ * 6. Footer
+ * 7. Citations
+ * 8. Typography section
+ * 9. Colours section
+ * 10. Component
+ * 11. Button
+ * 12. Form
+ * 13. Navigation
+ * 14. Listings
+ * 15. Grid
+ * 16. Phone landscape
+ * 17. Phablet
+ */
+
+/* --------------------------------------------------------------------------*/
+/* 1. Base                                                                   */
+/* --------------------------------------------------------------------------*/
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline-offset: 0;
+}
+
+html {
+  height: 100%;
+  font-size: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  line-height: 1;
+  color: #1F1712;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+::selection {
+    background: #1F1712;
+    color: white;
+}
+
+::-moz-selection {
+    background: #1F1712;
+    color: white;
+}
+
+/* Drop margin */
+h1, h2, h3, p, ul, ol, blockquote, figure {
+  margin-top: 0;
+  margin-bottom: 1.6666rem;
+}
+
+/* Standard leading */
+h1, h2, h3, p, ul, ol, blockquote {
+  line-height: 1.6666;
+}
+
+h1, .h1 {
+  font-family: 'Alfa Slab One', 'Helvetica Nueue', Helvetica, Arial, sans-serif;
+  font-size: 2.370192597rem;
+  font-weight: normal;
+}
+
+h2, h3, strong,
+.h2, .h3 {
+  font-weight: 600;
+}
+
+h2, .h2 {
+  font-size: 1.77768889rem;
+}
+
+h3, .h3 {
+  font-size: 1.3333rem;
+}
+
+small {
+  font-size: 0.75rem;
+}
+
+a {
+  color: #0275d8;
+  text-decoration: none;
+}
+
+a:hover, a:active, a:focus {
+  color: #025aa5;
+  text-decoration: underline;
+}
+
+figure {
+  margin: 0;
+}
+
+code {
+  display: inline-block;
+  padding: 0.25rem;
+  background-color: #EEE;
+  font-family: Monaco, Consolas, monospace;
+  font-size: 0.75rem;
+  line-height: 1.2;
+}
+
+/* --------------------------------------------------------------------------*/
+/* 2. Utilities                                                              */
+/* --------------------------------------------------------------------------*/
+
+.clear {
+  clear: both;
+}
+
+.clearfix::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+/* Anchor marker */
+.anchor {
+  color: #CCC;
+  vertical-align: baseline;
+}
+.anchor:hover, .anchor:active, .anchor:focus {
+  text-decoration: none;
+}
+.anchor::after {
+  content: '#';
+}
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* Style guide block display */
+.sg-block {
+  background-color: #EEE;
+  height: 20px;
+  margin-bottom: 0.5rem;
+}
+
+/* --------------------------------------------------------------------------*/
+/* 3. Sidebar                                                                 */
+/* --------------------------------------------------------------------------*/
+
+.sidebar {
+  background-color: #1F1712;
+}
+
+.sidebar__content {
+  padding: 2rem 1rem 0.5rem 1rem;
+}
+
+.sidebar__logo {
+  margin-bottom: 0;
+  font-size: 1.3333rem;
+  line-height: 1.2;
+  color: white;
+}
+.sidebar__logo > a {
+  color: inherit;
+}
+.sidebar__logo > a:hover {
+  color: white;
+  text-decoration: none;
+}
+.sidebar__logo > a:active,
+.sidebar__logo > a:focus {
+  color: #CCC;
+  text-decoration: none;
+}
+
+/* --------------------------------------------------------------------------*/
+/* 4. Content                                                                */
+/* --------------------------------------------------------------------------*/
+
+.content {
+  padding: 3rem 0 1rem 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 100%;
+}
+
+.content-wrap {
+  padding: 0 1rem;
+  max-width: 39rem; /* 624px */
+}
+
+/* --------------------------------------------------------------------------*/
+/* 5. Navigation (style guide)                                               */
+/* --------------------------------------------------------------------------*/
+
+.sgnav {
+  margin-top: 0.5rem;
+}
+.sgnav::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.sgnav__list {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.sgnav__list > li {
+  float: left;
+  margin-right: 1rem;
+}
+
+.sgnav__item {
+  display: block;
+  line-height: 2;
+  color: white;
+}
+.sgnav__item:hover {
+  color: white;
+}
+.sgnav__item:active, .sgnav__item:focus {
+  color: #CCC;
+  text-decoration: none;
+}
+
+.sgnav__item--active {
+  font-weight: 600;
+}
+
+.sgnav__item--anchor {
+  display: none;
+  padding-left: 1rem;
+}
+
+/* --------------------------------------------------------------------------*/
+/* 6. Footer                                                                 */
+/* --------------------------------------------------------------------------*/
+
+.footer-content {
+  border-top: solid 1px #CCC;
+  padding-top: 1.6666rem;
+  font-size: 0.75rem;
+  color: #999;
+}
+
+/* --------------------------------------------------------------------------*/
+/* 7. Citations                                                              */
+/* --------------------------------------------------------------------------*/
+
+.citations {
+  list-style: none;
+  padding-left: 0;
+}
+
+.citations > li {
+  margin-bottom: 1.6666rem;
+  text-indent: -2rem;
+  padding-left: 2rem;
+}
+
+/* --------------------------------------------------------------------------*/
+/* 8. Typography section                                                     */
+/* --------------------------------------------------------------------------*/
+
+.typography__display-font {
+  font-family: 'Alfa Slab One', 'Helvetica Nueue', Helvetica, Arial, sans-serif;
+}
+
+.typography__body-font {
+  font-weight: 600;
+}
+
+.typography__chart {
+  list-style: none;
+  padding-left: 0;
+  border-top: solid 4px #CCC;
+  border-bottom: solid 3px #CCC;
+}
+
+.typography__chart-item {
+  display: flex;
+  border-bottom: solid 1px #CCC;
+  padding: 1rem 0;
+}
+
+.typography__preview {
+  align-self: baseline;
+  display: block;
+  margin-bottom: 0;
+  width: 100%;
+}
+
+.typography__meta {
+  margin-bottom: 0;
+  flex-shrink: 0;
+  align-self: baseline;
+  font-size: 0.75rem;
+  text-align: right;
+  color: #999;
+}
+
+/* --------------------------------------------------------------------------*/
+/* 9. Colours section                                                        */
+/* --------------------------------------------------------------------------*/
+
+.colours {
+  list-style: none;
+  padding-left: 0;
+}
+
+.colour {
+  display: flex;
+  margin-bottom: 0.5rem;
+  border: solid 1px rgba(0,0,0,0.1);
+  padding: 1rem;
+}
+
+.colour__name {
+  width: 100%;
+  align-self: baseline;
+  opacity: 0.8;
+}
+
+.colour__value {
+  flex-shrink: 0;
+  align-self: baseline;
+  font-size: 0.75rem;
+  text-align: right;
+  opacity: 0.4;
+}
+
+.colour--day {
+  background-color: white;
+}
+
+.colour--night {
+  background-color: #1F1712;
+  color: white;
+}
+
+.colour--earth-orange {
+  background-color: #FA8232;
+}
+
+.colour--life-green {
+  background-color: #41C734;
+}
+
+.colour--sea-blue {
+  background-color: #2209E5;
+  color: white;
+}
+
+.colour--magma-red {
+  background-color: #EB0000;
+}
+
+.colour--gray-1 {
+  background-color: #666;
+  color: white;
+}
+
+.colour--gray-2 {
+  background-color: #999;
+  color: white;
+}
+
+.colour--gray-3 {
+  background-color: #CCC;
+}
+
+.colour--gray-4 {
+  background-color: #EEE;
+}
+
+.colour--gray-5 {
+  background-color: #F9F9F9;
+}
+
+.colour--anchor {
+  background-color: #0275d8;
+  color: white;
+}
+
+.colour--anchor-hover {
+  background-color: #025aa5;
+  color: white;
+}
+
+/* --------------------------------------------------------------------------*/
+/* 10. Component                                                             */
+/* --------------------------------------------------------------------------*/
+
+.component-preview {
+  padding: 1rem;
+  border: solid 1px #EEE;
+}
+
+.component-label {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: #666;
+}
+
+.component-dark {
+  background-color: #333;
+}
+
+.component-code {
+  margin-bottom: 1.6666rem;
+  padding: 1rem;
+  background-color: #EEE;
+}
+
+.component-code pre {
+  margin: 0;
+}
+
+.component-code code {
+  padding: 0;
+  white-space: pre-wrap;
+}
+
+/* --------------------------------------------------------------------------*/
+/* 11. Button                                                                */
+/* --------------------------------------------------------------------------*/
+
+/* Regular button */
+.btn {
+  display: block;
+  position: relative;
+  padding: 0.625rem 1rem 0.5rem 1rem;
+  border: solid 3px #333;
+  background-color: white;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+  text-align: center;
+  color: inherit;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+.btn:hover, .btn:active, .btn:focus {
+  background-color: #EEE;
+  text-decoration: none;
+  color: inherit;
+}
+.btn:active {
+  top: 2px;
+  background-color: #CCC;
+}
+.btn:focus {
+  outline: 0;
+}
+
+/* Primary button */
+.btn--primary {
+  border-color: transparent;
+  background-color: #FA8232;
+  color: inherit;
+}
+.btn--primary:hover, .btn--primary:active, .btn--primary:focus {
+  background-color: #FF9841;
+}
+.btn--primary:active {
+  background-color: #C75A11;
+}
+
+/* --------------------------------------------------------------------------*/
+/* 12. Form                                                                  */
+/* --------------------------------------------------------------------------*/
+
+label {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+input[type="text"], input[type="email"], input[type="number"] {
+  display: block;
+  padding: 0.625rem 0.5rem 0.5rem 0.5rem;
+  border: solid 3px #333;
+  background-color: white;
+  width: 100%;
+}
+
+input:focus {
+  outline: solid 3px #FA8232;
+}
+
+.form-required::after {
+  content: ' *';
+  color: red;
+}
+
+input.form-error {
+  border-color: #EB0000;
+}
+
+.form-text-error {
+  margin-top: 0.25rem;
+  font-size: 0.75rem;
+  color: #EB0000;
+}
+
+/* --------------------------------------------------------------------------*/
+/* 13. Navigation                                                            */
+/* --------------------------------------------------------------------------*/
+
+.nav-btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.6);
+}
+
+.nav-btn:hover, .nav-btn:active, .nav-btn:focus {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-btn--cta {
+  position: relative;
+  background-color: #FA8232;
+  color: inherit;
+}
+.nav-btn--cta:hover, .nav-btn--cta:active, .nav-btn--cta:focus {
+  background-color: #FF9841;
+  color: inherit;
+}
+.nav-btn--cta:active {
+  top: 2px;
+  background-color: #C75A11;
+}
+
+.nav {
+  margin-top: 0.5rem;
+  margin-right: 0.5rem;
+  float: right;
+}
+
+.nav__list {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+}
+
+/* --------------------------------------------------------------------------*/
+/* 14. Listings                                                              */
+/* --------------------------------------------------------------------------*/
+
+.listings {
+  display: flex;
+  margin: 0 -0.5rem;
+  padding-left: 0;
+  list-style: none;
+}
+
+.listings__item {
+  width: 33.3333%;
+  padding: 0.5rem;
+}
+
+.listings__item-content {
+  margin-bottom: 0;
+  padding: 1rem;
+  background-color: #EEE;
+}
+
+.listings__item-price {
+  display: block;
+  font-size: 1.3333rem;
+  font-weight: 600;
+}
+
+.listings__item-name {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+/* --------------------------------------------------------------------------*/
+/* 15. Grid                                                                  */
+/* Inspired by Flexbox Grid (see citations).                                 */
+/* --------------------------------------------------------------------------*/
+
+.row {
+  display: flex;
+  margin: 0 -0.5rem;
+}
+
+.col {
+  width: 100%;
+  padding: 0 0.5rem;
+}
+
+.col--1 {
+  width: 100%;
+}
+
+.col--2 {
+  width: 50%;
+}
+
+.col--3 {
+  width: 33.3333%;
+}
+
+.col--4 {
+  width: 25%;
+}
+
+.col--5 {
+  width: 20%;
+}
+
+.col--6 {
+  width: 16.6666%;
+}
+
+.col--7 {
+  width: 14.285714286%;
+}
+
+.col--8 {
+  width: 12.5%;
+}
+
+.col--9 {
+  width: 11.1111%;
+}
+
+.col--10 {
+  width: 10%;
+}
+
+.col--11 {
+  width: 9.090909091%
+}
+
+.col--12 {
+  width: 8.3333%;
+}
+
+/* --------------------------------------------------------------------------*/
+/* 16. Phone landscape                                                       */
+/* --------------------------------------------------------------------------*/
+
+@media screen and (min-width: 30em) { /* 480px */
+
+  .wrap {
+    flex-direction: row;
+  }
+
+  .sidebar__logo {
+    margin-bottom: 1.5rem;
+  }
+
+  .sgnav__list > li {
+    float: none;
+    margin-right: 0;
+  }
+
+  .sgnav__item--anchor {
+    display: block;
+  }
+
+  .sgnav__item--page {
+    margin-top: 1rem;
+  }
+
+  .sidebar {
+    flex-shrink: 0;
+    flex-grow: 0.3333;
+    flex-basis: 12rem; /* 192px */
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100vh;
+  }
+
+  .sidebar__content {
+    float: right;
+    padding: 3rem 1rem;
+    width: 12rem; /* 192px */
+  }
+
+  .content {
+    flex-grow: 1;
+    flex-basis: 39rem; /* 624px */
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding-top: 3rem;
+    height: 100vh;
+  }
+
+}
+
+/* --------------------------------------------------------------------------*/
+/* 17. Phablet                                                               */
+/* --------------------------------------------------------------------------*/
+
+@media screen and (min-width: 40em) { /* 640px */
+
+  .content-wrap {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+}
