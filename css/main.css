@@ -12,6 +12,27 @@
  */
 
 /* --------------------------------------------------------------------------*/
+/* 01. Variables                                                             */
+/* --------------------------------------------------------------------------*/
+
+:root {
+  /* Colors */
+  --color-day: white;
+  --color-night: #1F1712;
+  --color-earth-orange: #FA8232;
+  --color-life-green: #41C734;
+  --color-sea-blue: #2209E5;
+  --color-magma-red: #EB0000;
+  --color-gray-1: #333;
+  --color-gray-2: #999;
+  --color-gray-3: #CCC;
+  --color-gray-4: #EEE;
+  --color-gray-5: #F9F9F9;
+  --color-anchor: #0275d8;
+  --color-anchor-hover: #025aa5;
+}
+
+/* --------------------------------------------------------------------------*/
 /* 01. Base                                                                  */
 /* --------------------------------------------------------------------------*/
 
@@ -33,18 +54,18 @@ body {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 300;
   line-height: 1;
-  color: #1F1712;
+  color: var(--color-night);
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 ::selection {
-    background: #1F1712;
-    color: white;
+    background: var(--color-night);
+    color: var(--color-day);
 }
 
 ::-moz-selection {
-    background: #1F1712;
-    color: white;
+    background: var(--color-night);
+    color: var(--color-day);
 }
 
 /* Drop margin */
@@ -98,7 +119,7 @@ figure {
 code {
   display: inline-block;
   padding: 0.25rem;
-  background-color: #EEE;
+  background-color: var(--color-gray-4);
   font-family: Monaco, Consolas, monospace;
   font-size: 0.75rem;
   line-height: 1.2;
@@ -120,7 +141,7 @@ code {
 
 /* Anchor marker */
 .anchor {
-  color: #CCC;
+  color: var(--color-gray-3);
   vertical-align: baseline;
 }
 .anchor:hover, .anchor:active, .anchor:focus {
@@ -218,7 +239,7 @@ label {
 input[type="text"], input[type="email"], input[type="number"] {
   display: block;
   padding: 0.625rem 0.5rem 0.5rem 0.5rem;
-  border: solid 3px #333;
+  border: solid 3px var(--color-night);
   background-color: white;
   width: 100%;
 }
@@ -251,7 +272,7 @@ input.form-error {
   display: block;
   position: relative;
   padding: 0.625rem 1rem 0.5rem 1rem;
-  border: solid 3px #333;
+  border: solid 3px var(--color-night);
   background-color: white;
   font-weight: 600;
   line-height: 1;
@@ -262,13 +283,13 @@ input.form-error {
   -webkit-appearance: none;
 }
 .btn:hover, .btn:active, .btn:focus {
-  background-color: #EEE;
+  background-color: var(--color-gray-4);
   text-decoration: none;
   color: inherit;
 }
 .btn:active {
   top: 2px;
-  background-color: #CCC;
+  background-color: var(--color-gray-3);
 }
 .btn:focus {
   outline: 0;
@@ -349,7 +370,7 @@ input.form-error {
 .listings__item-content {
   margin-bottom: 0;
   padding: 1rem;
-  background-color: #EEE;
+  background-color: var(--color-gray-4);
 }
 
 .listings__item-price {
