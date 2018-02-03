@@ -286,7 +286,12 @@
 }
 
 .sg-component-dark {
+  position: relative;
   background-color: var(--color-gray-1);
+}
+
+.sg-component-nav {
+  height: 6rem;
 }
 
 .sg-component-code {

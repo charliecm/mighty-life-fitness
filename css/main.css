@@ -7,8 +7,13 @@
  * 04. Grid
  * 05. Form
  * 06. Button
- * 07. Navigation
- * 08. Listings
+ * 07. Header Bar
+ * 08. Navigation
+ * 09. Hero
+ * 10. Landing
+ * 11. Listings
+ * 12. > 480
+ * 13. > 640
  */
 
 /* --------------------------------------------------------------------------*/
@@ -161,6 +166,14 @@ code {
 /* 03. Layout                                                                */
 /* --------------------------------------------------------------------------*/
 
+.wrap {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  max-width: 60rem;
+}
 
 /* --------------------------------------------------------------------------*/
 /* 04. Grid                                                                  */
@@ -309,20 +322,114 @@ input.form-error {
 }
 
 /* --------------------------------------------------------------------------*/
-/* 07. Navigation                                                            */
+/* 07. Header bar                                                            */
 /* --------------------------------------------------------------------------*/
 
-.nav-btn {
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  color: rgba(255,255,255,0.6);
+.header-bar {
+  position: absolute;
+  padding-bottom: 6rem;
+  width: 100%;
+  background: linear-gradient(0, transparent, rgba(0,0,0,0.9));
 }
 
+.logo-wrap {
+  display: inline-block;
+  margin-bottom: 0;
+  line-height: 1;
+}
+
+.logo {
+  transition: transform 0.2s;
+  transform-origin: 10% 5%;
+  display: block;
+  position: relative;
+  margin-bottom: 0;
+  padding-top: 1.25rem;
+  padding-bottom: 1rem;
+  padding-right: 1rem;
+  font-size:  1rem;
+  color:  white;
+}
+.logo:hover, .logo:active, .logo:focus {
+  transform: scale(1.1) rotate(-3deg);
+  color: white;
+  text-decoration: none;
+}
+.logo:active {
+  top: 2px;
+  color: var(--color-gray-2);
+}
+
+/* --------------------------------------------------------------------------*/
+/* 08. Navigation                                                            */
+/* --------------------------------------------------------------------------*/
+
+.nav {
+  margin-top: 0.5rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.nav__list {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+}
+
+/* Menu */
+.nav__menu {
+  margin-right: 0.25rem;
+  padding-left: 0;
+  width: 5.5rem;
+  list-style: none;
+}
+.nav__menu:hover {
+  background-color: rgba(0,0,0,0.72);
+}
+
+/* Menu chevron */
+.nav__menu .nav__item:first-child::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 18px;
+  right: 16px;
+  border: solid 5px transparent;
+  border-top-width: 6px;
+  border-top-color: white;
+  width: 0;
+  height: 0;
+}
+
+/* Hide menu items */
+.nav__menu .nav__item:not(:first-child) {
+  display: none;
+}
+
+/* Show menu items on hover */
+.nav__menu:hover .nav__item {
+  display: block;
+}
+
+/* Nav button */
+.nav-btn {
+  display: inline-block;
+  position: relative;
+  padding: 1rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+  color: white;
+}
 .nav-btn:hover, .nav-btn:active, .nav-btn:focus {
   text-decoration: none;
   color: white;
+}
+.nav-btn:active {
+  top: 1px;
+  color: var(--color-gray-2);
 }
 
 .nav-btn--cta {
@@ -335,24 +442,24 @@ input.form-error {
   color: inherit;
 }
 .nav-btn--cta:active {
-  top: 2px;
+  top: 1px;
   background-color: #C75A11;
 }
 
-.nav {
-  margin-top: 0.5rem;
-  margin-right: 0.5rem;
-  float: right;
-}
+/* --------------------------------------------------------------------------*/
+/* 09. Hero                                                                  */
+/* --------------------------------------------------------------------------*/
 
-.nav__list {
-  list-style: none;
-  padding-left: 0;
-  display: flex;
 }
 
 /* --------------------------------------------------------------------------*/
-/* 08. Listings                                                              */
+/* 10. Landing                                                               */
+/* --------------------------------------------------------------------------*/
+
+
+
+/* --------------------------------------------------------------------------*/
+/* 11. Listings                                                              */
 /* --------------------------------------------------------------------------*/
 
 .listings {
@@ -382,4 +489,54 @@ input.form-error {
 .listings__item-name {
   display: block;
   margin-bottom: 0.5rem;
+}
+
+/* --------------------------------------------------------------------------*/
+/* 12. > 480                                                                 */
+/* --------------------------------------------------------------------------*/
+
+@media screen and (min-width: 30em) {
+
+  .nav-btn {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 1rem;
+  }
+
+  .nav__menu .nav__item:first-child {
+    display: none;
+  }
+
+  .nav__menu .nav__item:not(:first-child) {
+    display: inline-block;
+  }
+
+  .nav-btn {
+    margin-top: 0.375rem;
+    color: rgba(255,255,255,0.8);
+  }
+
+  .nav__menu {
+    margin-right: 0;
+    width: auto;
+  }
+
+  .nav__menu:hover {
+    background-color: transparent;
+  }
+
+  .logo {
+    padding-top: 1.5rem;
+    font-size: 1.5rem;
+  }
+
+}
+
+/* --------------------------------------------------------------------------*/
+/* 13. > 640                                                                 */
+/* --------------------------------------------------------------------------*/
+
+@media screen and (min-width: 40em) {
+
+
 }
