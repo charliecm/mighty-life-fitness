@@ -206,6 +206,15 @@ code {
   flex: 1;
 }
 
+.section {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.section--alt {
+  background-color: var(--color-gray-4);
+}
+
 /* --------------------------------------------------------------------------*/
 /* 04. Grid                                                                  */
 /* Inspired by Flexbox Grid (see citations).                                 */
@@ -471,6 +480,7 @@ input.form-error {
 
 .footer {
   padding-top: 2rem;
+  padding-bottom: 2rem;
   background-color: var(--color-night);
   text-align: center;
   color: white;
@@ -482,6 +492,10 @@ input.form-error {
 
 .footer__btn-cta {
   margin-top: 1rem;
+}
+
+.footer_copyright {
+  margin-bottom: 0;
 }
 
 /* --------------------------------------------------------------------------*/
@@ -507,14 +521,27 @@ input.form-error {
 .hero__content {
   position: absolute;
   bottom: 0;
-  padding-bottom: 3rem;
+  padding-bottom: 4rem;
+  width: 100%;
+}
+
+.hero__title {
+  margin-bottom: 0;
+  font-size: 2.370192597rem;
+  line-height: 1.3333;
+  color: white;
+  text-align: center;
 }
 
 .hero__tagline {
-  margin-bottom: 1.6666rem;
-  font-size: 2.3702rem;
+  margin-bottom: 0;
+  font-size: 1.777728889rem;
   line-height: 1.3333;
   color: white;
+}
+
+.hero__btn-cta {
+  margin-top: 1rem;
 }
 
 .hero__citation {
@@ -532,9 +559,6 @@ input.form-error {
 /* --------------------------------------------------------------------------*/
 /* 11. Landing                                                               */
 /* --------------------------------------------------------------------------*/
-
-
-
 
 /* --------------------------------------------------------------------------*/
 /* 12. Listings                                                              */
@@ -573,7 +597,7 @@ input.form-error {
 /* 13. > 560                                                                 */
 /* --------------------------------------------------------------------------*/
 
-@media screen and (min-width: 35rem) {
+@media screen and (min-width: 35em) {
 
   .nav-btn {
     padding-left: 1rem;

@@ -323,7 +323,7 @@
 /* 10. > 720                                                                 */
 /* --------------------------------------------------------------------------*/
 
-@media screen and (min-width: 45rem) {
+@media screen and (min-width: 45em) {
 
   .sg-wrap {
     flex-direction: row;
