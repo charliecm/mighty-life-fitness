@@ -9,11 +9,11 @@
  * 06. Button
  * 07. Header Bar
  * 08. Navigation
- * 09. Hero
- * 10. Landing
- * 11. Listings
- * 12. > 480
- * 13. > 640
+ * 09. Footer
+ * 10. Hero
+ * 11. Landing
+ * 12. Listings
+ * 13. > 560
  */
 
 /* --------------------------------------------------------------------------*/
@@ -21,6 +21,7 @@
 /* --------------------------------------------------------------------------*/
 
 :root {
+
   /* Colors */
   --color-day: white;
   --color-night: #1F1712;
@@ -35,6 +36,16 @@
   --color-gray-5: #F9F9F9;
   --color-anchor: #0275d8;
   --color-anchor-hover: #025aa5;
+
+  /* Fonts */
+  --font-primary: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-secondary: 'Alfa Slab One', 'Helvetica Nueue', Helvetica, Arial, sans-serif;
+
+  /* Metrics */
+  --wrap-large: 47rem;
+  --wrap-small: 30rem;
+  --wrap-padding: 1rem;
+
 }
 
 /* --------------------------------------------------------------------------*/
@@ -56,7 +67,7 @@ html {
 
 body {
   margin: 0;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: var(--font-primary);
   font-weight: 300;
   line-height: 1;
   color: var(--color-night);
@@ -85,7 +96,7 @@ h1, h2, h3, p, ul, ol, blockquote {
 }
 
 h1, .h1 {
-  font-family: 'Alfa Slab One', 'Helvetica Nueue', Helvetica, Arial, sans-serif;
+  font-family: var(--font-secondary);
   font-size: 2.370192597rem;
   font-weight: normal;
 }
@@ -156,6 +167,14 @@ code {
   content: '#';
 }
 
+/* Light link */
+.a-light {
+  color: white;
+}
+.a-light:hover, .a-light:active, .a-light:focus {
+  color: var(--color-gray-5);
+}
+
 .img-responsive {
   display: block;
   max-width: 100%;
@@ -170,9 +189,21 @@ code {
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  max-width: 60rem;
+  padding-left: var(--wrap-padding);
+  padding-right: var(--wrap-padding);
+  max-width: var(--wrap-large);
+}
+
+/* Flexbox sticky footer */
+/* From https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/ */
+.wrap-all {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.wrap-content {
+  flex: 1;
 }
 
 /* --------------------------------------------------------------------------*/
@@ -282,7 +313,7 @@ input.form-error {
 
 /* Regular button */
 .btn {
-  display: block;
+  display: inline-block;
   position: relative;
   padding: 0.625rem 1rem 0.5rem 1rem;
   border: solid 3px var(--color-night);
@@ -312,10 +343,11 @@ input.form-error {
 .btn--primary {
   border-color: transparent;
   background-color: #FA8232;
-  color: inherit;
+  color: var(--color-night);
 }
 .btn--primary:hover, .btn--primary:active, .btn--primary:focus {
   background-color: #FF9841;
+  color: var(--color-night);
 }
 .btn--primary:active {
   background-color: #C75A11;
@@ -327,6 +359,7 @@ input.form-error {
 
 .header-bar {
   position: absolute;
+  z-index: 10;
   padding-bottom: 6rem;
   width: 100%;
   background: linear-gradient(0, transparent, rgba(0,0,0,0.9));
@@ -432,34 +465,79 @@ input.form-error {
   color: var(--color-gray-2);
 }
 
-.nav-btn--cta {
+/* --------------------------------------------------------------------------*/
+/* 09. Footer                                                                */
+/* --------------------------------------------------------------------------*/
+
+.footer {
+  padding-top: 2rem;
+  background-color: var(--color-night);
+  text-align: center;
+  color: white;
+}
+
+.footer__cta {
+  margin-bottom: 2rem;
+}
+
+.footer__btn-cta {
+  margin-top: 1rem;
+}
+
+/* --------------------------------------------------------------------------*/
+/* 10. Hero                                                                  */
+/* --------------------------------------------------------------------------*/
+
+.hero {
   position: relative;
-  background-color: #FA8232;
-  color: inherit;
-}
-.nav-btn--cta:hover, .nav-btn--cta:active, .nav-btn--cta:focus {
-  background-color: #FF9841;
-  color: inherit;
-}
-.nav-btn--cta:active {
-  top: 1px;
-  background-color: #C75A11;
+  background-color: var(--color-gray-1);
+  background-size: cover;
+  height: 22.5rem;
 }
 
-/* --------------------------------------------------------------------------*/
-/* 09. Hero                                                                  */
-/* --------------------------------------------------------------------------*/
+.hero--landing {
+  background-image: url(../img/hero.jpg);
+  background-position: top center;
+}
 
+.hero__wrap {
+  height: 100%;
+}
+
+.hero__content {
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 3rem;
+}
+
+.hero__tagline {
+  margin-bottom: 1.6666rem;
+  font-size: 2.3702rem;
+  line-height: 1.3333;
+  color: white;
+}
+
+.hero__citation {
+  position: absolute;
+  right: var(--wrap-padding);
+  bottom: 0;
+  margin-bottom: 0.5rem;
+  padding: 0.125rem 0.25rem;
+  background-color: black;
+  font-size: 0.5rem;
+  color: rgba(255,255,255,0.5);
+  opacity: 0.5;
 }
 
 /* --------------------------------------------------------------------------*/
-/* 10. Landing                                                               */
+/* 11. Landing                                                               */
 /* --------------------------------------------------------------------------*/
 
 
 
+
 /* --------------------------------------------------------------------------*/
-/* 11. Listings                                                              */
+/* 12. Listings                                                              */
 /* --------------------------------------------------------------------------*/
 
 .listings {
