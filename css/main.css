@@ -509,24 +509,24 @@ input.form-error {
   height: 22.5rem;
 }
 
-.hero--home--landing {
-  background-image: url(../img/hero.jpg);
+.hero--landing {
+  background-image: url(../img/hero-landing.jpg);
   background-position: top center;
 }
-.hero--join--landing{
-  background-image: url(../img/join-us.jpg);
+.hero--join {
+  background-image: url(../img/hero-join.jpg);
   background-position: top center;
 }
-.hero--events--landing{
-  background-image: url(../img/events.jpg);
+.hero--events {
+  background-image: url(../img/hero-events.jpg);
   background-position: top center;
 }
-.hero--about--landing{
-  background-image: url(../img/about.jpg);
+.hero--about {
+  background-image: url(../img/hero-about.jpg);
   background-position: top center;
 }
-.hero--contact--landing{
-  background-image: url(../img/contact.png);
+.hero--contact {
+  background-image: url(../img/hero-contact.png);
   background-position: top center;
 }
 .hero__wrap {
