@@ -382,7 +382,6 @@ input.form-error {
 
 .logo {
   transition: transform 0.2s;
-  transform-origin: 10% 5%;
   display: block;
   position: relative;
   margin-bottom: 0;
@@ -393,9 +392,9 @@ input.form-error {
   color:  white;
 }
 .logo:hover, .logo:active, .logo:focus {
-  transform: scale(1.1) rotate(-3deg);
-  color: white;
+  transform: scale(1.1);
   text-decoration: none;
+  color: white;
 }
 .logo:active {
   top: 2px;
@@ -594,7 +593,7 @@ input.form-error {
 .listings__item-content {
   margin-bottom: 0;
   padding: 1rem;
-  background-color: var(--color-gray-4);
+  background-color: white;
 }
 
 .listings__item-price {
