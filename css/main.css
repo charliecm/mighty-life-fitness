@@ -167,6 +167,14 @@ code {
   content: '#';
 }
 
+/* Inherit link */
+.a-inherit {
+  color: inherit;
+}
+.a-inherit:hover, .a-inherit:active, .a-inherit:focus {
+  color: inherit;
+}
+
 /* Light link */
 .a-light {
   color: white;
