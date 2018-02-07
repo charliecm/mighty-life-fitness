@@ -591,20 +591,22 @@ input.form-error {
 
 .listings {
   display: flex;
-  margin: 0 -0.5rem;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
   padding-left: 0;
   list-style: none;
+  flex-wrap: wrap;
 }
 
 .listings__item {
-  width: 33.3333%;
+  width: 100%;
   padding: 0.5rem;
 }
 
 .listings__item-content {
   margin-bottom: 0;
   padding: 1rem;
-  background-color: white;
+  background-color: var(--color-gray-4);
 }
 
 .listings__item-price {
@@ -655,6 +657,10 @@ input.form-error {
   .logo {
     padding-top: 1.5rem;
     font-size: 1.5rem;
+  }
+
+  .listings__item {
+    width: 33.3333%;
   }
 
 }
