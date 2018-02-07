@@ -534,8 +534,11 @@ input.form-error {
 
 .hero__content {
   position: absolute;
+  left: 0;
   bottom: 0;
   padding-bottom: 4rem;
+  padding-left: var(--wrap-padding);
+  padding-right: var(--wrap-padding);
   width: 100%;
 }
 
