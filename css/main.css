@@ -622,18 +622,11 @@ input.form-error {
 /* --------------------------------------------------------------------------*/
 
 .listings {
-  display: flex;
-  margin-left: -0.5rem;
-  margin-right: -0.5rem;
   padding-left: 0;
   list-style: none;
-  flex-wrap: wrap;
 }
 
-.listings__item {
-  width: 100%;
-  padding: 0.5rem;
-}
+/* .listings-item */
 
 .listings__item-content {
   margin-bottom: 0;
@@ -695,13 +688,8 @@ input.form-error {
     font-size: 1.5rem;
   }
 
-  .listings__item {
-    width: 33.3333%;
-  }
+}
 
-  .listings__item--alt {
-    width: 50%;
-  }
 /* --------------------------------------------------------------------------*/
 /* 13. > 720px (lg)                                                          */
 /* --------------------------------------------------------------------------*/
