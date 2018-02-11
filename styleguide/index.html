@@ -608,6 +608,17 @@
           <p>
             This site uses a flexible grid system. Simply a add <code>div.row</code> that contains <code>div.col</code> with <code>.col--{number}</code> to establish a row of column(s). For example, a <code>div.col.col--3</code> creates a column that fills 1/3 of the row. There are up to <strong>12</strong> column sizes to choose from.
           </p>
+          <p>
+            <strong>Adaptive grid:</strong> Grid can also be applied based on breakpoint by using <code>.col--{number}{breakpoint}</code>. For example, <code>.col--2md</code> will ensure a 2-column layout at <code>md</code> breakpoint. The following breakpoints are available:
+          </p>
+          <ul>
+            <li>
+              <code>md</code> &gt; 560px
+            </li>
+            <li>
+              <code>lg</code> &gt; 720px
+            </li>
+          </ul>
           <div class="sg-component-preview">
             <div class="row">
               <div class="col col--1"><div class="sg-block"></div></div>
