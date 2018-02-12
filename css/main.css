@@ -11,7 +11,7 @@
  * 08. Navigation
  * 09. Footer
  * 10. Hero
- * 11. Landing
+ * 11. Others
  * 12. Listings
  * 13. > 560px
  */
@@ -296,7 +296,7 @@ label {
   font-weight: 600;
 }
 
-input[type="text"], input[type="email"], input[type="number"] {
+input[type="text"], input[type="email"], input[type="number"], textarea {
   display: block;
   padding: 0.625rem 0.5rem 0.5rem 0.5rem;
   border: solid 3px var(--color-night);
@@ -304,7 +304,7 @@ input[type="text"], input[type="email"], input[type="number"] {
   width: 100%;
 }
 
-input:focus {
+input:focus, textarea:focus {
   outline: solid 3px #FA8232;
 }
 
@@ -313,7 +313,7 @@ input:focus {
   color: red;
 }
 
-input.form-error {
+input.form-error, textarea.form-error {
   border-color: #EB0000;
 }
 
@@ -321,6 +321,10 @@ input.form-error {
   margin-top: 0.25rem;
   font-size: 0.75rem;
   color: #EB0000;
+}
+
+.form-group {
+  margin-bottom: 1rem;
 }
 
 /* --------------------------------------------------------------------------*/
@@ -581,8 +585,12 @@ input.form-error {
 }
 
 /* --------------------------------------------------------------------------*/
-/* 11. Landing                                                               */
+/* 11. Others                                                                */
 /* --------------------------------------------------------------------------*/
+
+.map {
+  width: 100%;
+}
 
 /* --------------------------------------------------------------------------*/
 /* 12. Listings                                                              */
