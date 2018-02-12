@@ -100,6 +100,9 @@
   float: left;
   margin-right: 1rem;
 }
+.sg-nav__list > li:last-of-type {
+  margin-right: 0;
+}
 
 .sg-nav__item {
   display: block;
