@@ -622,11 +622,16 @@ input.form-error {
 /* --------------------------------------------------------------------------*/
 
 .listings {
+  margin-bottom: 0;
   padding-left: 0;
   list-style: none;
+  flex-wrap: wrap;
 }
 
-/* .listings-item */
+.listings__item {
+  flex-shrink: 0;
+  margin-bottom: 1.6666rem;
+}
 
 .listings__item-content {
   margin-bottom: 0;
@@ -638,14 +643,16 @@ input.form-error {
   background-color: white;
 }
 
-.listings__item-price {
+.listings__item-title {
   display: block;
   font-size: 1.3333rem;
   font-weight: 600;
 }
 
-.listings__item-name {
+.listings__item-prop {
   display: block;
+}
+.listings__item-prop:last-of-type {
   margin-bottom: 0.5rem;
 }
 
