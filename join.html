@@ -59,41 +59,74 @@
       <section class="section">
         <div class="wrap">
           <h2 id="membership">Membership</h2>
-          <p>
-            All options include access to the gym during open hours and a free personal training session every 3rd month.
-          </p>
-          <ul class="listings row">
-            <li class="listings__item col col--4md">
-              <p class="listings__item-content">
+          <div class="listings row">
+            <div class="listings__item col col--4md">
+              <div class="listings__item-content">
                 <span class="listings__item-title">$64/mo</span>
                 <span class="listings__item-prop">Month-by-month</span>
-              </p>
-            </li>
-            <li class="listings__item col col--4md">
-              <p class="listings__item-content">
+              </div>
+            </div>
+            <div class="listings__item col col--4md">
+              <div class="listings__item-content">
                 <span class="listings__item-title">$56/mo</span>
                 <span class="listings__item-prop">6 months</span>
-              </p>
-            </li>
-            <li class="listings__item col col--4md">
-              <p class="listings__item-content">
+                <span class="listings__item-prop"></span>
+              </div>
+            </div>
+            <div class="listings__item col col--4md">
+              <div class="listings__item-content">
                 <span class="listings__item-title">$48/mo</span>
                 <span class="listings__item-prop">12 months</span>
-              </p>
+              </div>
+            </div>
+          </div>
+          <p>
+            All tiers include access to the gym during open hours and <strong>a free personal training session</strong> every 3rd month. Our gym features:
+          </p>
+          <ul class="grid-list row">
+            <li class="col col--6 col--4md">
+              Lockers
+            </li>
+            <li class="col col--6 col--4md">
+              Showers
+            </li>
+            <li class="col col--6 col--4md">
+              6 power racks
+            </li>
+            <li class="col col--6 col--4md">
+              6 benches
+            </li>
+            <li class="col col--6 col--4md">
+              Stretching area
+            </li>
+            <li class="col col--6 col--4md">
+              Free parking
             </li>
           </ul>
         </div>
       </section>
       <section class="section section--alt">
-        <div class="wrap">
-          <h2>Sign Up</h2>
-          <form>
-            <p>
-              Form here...
-            </p>
-            <p>
-              <input type="submit" class="btn btn--primary">
-            </p>
+        <div class="wrap wrap--md">
+          <h2>Get Started</h2>
+          <p>
+            Fill in the information below to create your online account. You'll gain access your dashboard to manage your membership and buy training packages.
+          </p>
+          <form method="post" action="register1.html">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input id="name" type="text" name="name" required placeholder="Your name...">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input id="email" type="email" name="email" required placeholder="Your email...">
+            </div>
+            <div class="form-group">
+              <label for="email">Password</label>
+              <input id="password" type="password" name="password" required placeholder="Password must be 8 characters long...">
+            </div>
+            <div class="form-group">
+              <input type="submit" value="Register" class="btn btn--primary">
+            </div>
           </form>
         </div>
       </section>
@@ -101,10 +134,7 @@
     <footer class="footer">
       <div class="wrap">
         <p class="footer__cta">
-          Great physique awaits you.<br>
-          <a href="join.html" class="footer__btn-cta btn btn--primary">
-            Join Now
-          </a>
+          Great physique awaits you.
         </p>
         <p class="footer_copyright">
           &copy; 2018

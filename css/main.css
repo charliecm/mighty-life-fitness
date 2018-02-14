@@ -381,6 +381,10 @@ input.form-error, textarea.form-error {
   outline: 0;
 }
 
+.btn--full {
+  width: 100%;
+}
+
 /* Primary button */
 .btn--primary {
   border-color: transparent;
@@ -618,6 +622,11 @@ input.form-error, textarea.form-error {
 
 .map {
   width: 100%;
+}
+
+.grid-list {
+  padding-left: 0.5rem;
+  list-style-position: inside;
 }
 
 /* --------------------------------------------------------------------------*/
