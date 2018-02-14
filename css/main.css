@@ -386,21 +386,20 @@ input.form-error, textarea.form-error {
 }
 
 .logo-wrap {
-  display: inline-block;
-  margin-bottom: 0;
-  line-height: 1;
 }
 
 .logo {
+  display: inline-block;
   transition: transform 0.2s;
-  display: block;
   position: relative;
   margin-bottom: 0;
   padding-top: 1.25rem;
   padding-bottom: 1rem;
   padding-right: 1rem;
-  font-size:  1rem;
-  color:  white;
+  font-family: var(--font-secondary);
+  font-weight: normal;
+  line-height: 1;
+  color: white;
 }
 .logo:hover, .logo:active, .logo:focus {
   transform: scale(1.1);
