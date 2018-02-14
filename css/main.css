@@ -44,8 +44,9 @@
   --font-secondary: 'Alfa Slab One', 'Helvetica Nueue', Helvetica, Arial, sans-serif;
 
   /* Metrics */
-  --wrap-large: 47rem;
-  --wrap-small: 30rem;
+  --wrap-lg: 47rem;
+  --wrap-md: 30rem;
+  --wrap-sm: 22rem;
   --wrap-padding: 1rem;
 
 }
@@ -93,8 +94,12 @@ h1, h2, h3, p, ul, ol, blockquote, figure {
 }
 
 /* Standard leading */
-h1, h2, h3, p, ul, ol, blockquote {
+p, ul, ol, blockquote {
   line-height: 1.6666;
+}
+
+h1, h2, h3 {
+  line-height: 1.2;
 }
 
 h1, .h1 {
@@ -109,10 +114,12 @@ h2, h3, strong,
 }
 
 h2, .h2 {
+  font-family: var(--font-primary);
   font-size: 1.77768889rem;
 }
 
 h3, .h3 {
+  font-family: var(--font-primary);
   font-size: 1.3333rem;
 }
 
@@ -191,6 +198,10 @@ code {
   height: auto;
 }
 
+.hidden {
+  display: none;
+}
+
 /* --------------------------------------------------------------------------*/
 /* 03. Layout                                                                */
 /* --------------------------------------------------------------------------*/
@@ -201,7 +212,15 @@ code {
   margin-right: auto;
   padding-left: var(--wrap-padding);
   padding-right: var(--wrap-padding);
-  max-width: var(--wrap-large);
+  max-width: var(--wrap-lg);
+}
+
+.wrap--md {
+  max-width: var(--wrap-md);
+}
+
+.wrap--sm {
+  max-width: var(--wrap-sm);
 }
 
 /* Flexbox sticky footer */
@@ -234,6 +253,7 @@ code {
   display: flex;
   margin-left: -0.5rem;
   margin-right: -0.5rem;
+  flex-wrap: wrap;
 }
 
 .col {
@@ -298,7 +318,7 @@ label {
   font-weight: 600;
 }
 
-input[type="text"], input[type="email"], input[type="number"], textarea {
+input[type="text"], input[type="email"], input[type="number"], input[type="password"], textarea {
   display: block;
   padding: 0.625rem 0.5rem 0.5rem 0.5rem;
   border: solid 3px var(--color-night);
@@ -517,27 +537,33 @@ input.form-error, textarea.form-error {
   position: relative;
   background-color: var(--color-gray-1);
   background-size: cover;
-  height: 22.5rem;
+  height: 22.5rem; /* 360px */
 }
 
 .hero--landing {
   background-image: url(../img/hero-landing.jpg);
   background-position: top center;
 }
+
 .hero--join {
   background-image: url(../img/hero-join.jpg);
   background-position: top center;
 }
+
 .hero--events {
   background-image: url(../img/hero-events.jpg);
   background-position: top center;
 }
+
 .hero--about {
   background-image: url(../img/hero-about.jpg);
   background-position: top center;
 }
+
 .hero--contact {
-  background-image: url(../img/hero-contact.png);
+  background-image: url(../img/hero-contact.jpg);
+  background-position: top center;
+}
   background-position: top center;
 }
 .hero__wrap {
@@ -548,6 +574,7 @@ input.form-error, textarea.form-error {
   position: absolute;
   left: 0;
   bottom: 0;
+  z-index: 10;
   padding-bottom: 4rem;
   padding-left: var(--wrap-padding);
   padding-right: var(--wrap-padding);
@@ -601,7 +628,6 @@ input.form-error, textarea.form-error {
   margin-bottom: 0;
   padding-left: 0;
   list-style: none;
-  flex-wrap: wrap;
 }
 
 .listings__item {
