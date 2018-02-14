@@ -111,21 +111,22 @@
           <p>
             Fill in the information below to create your online account. You'll gain access your dashboard to manage your membership and buy training packages.
           </p>
-          <form method="post" action="register1.html">
+          <form action="register1.html">
+            <!-- TODO: Make fields required -->
             <div class="form-group">
               <label for="name">Name</label>
-              <input id="name" type="text" name="name" required placeholder="Your name...">
+              <input id="name" type="text" name="name" placeholder="Full name...">
             </div>
             <div class="form-group">
               <label for="email">Email</label>
-              <input id="email" type="email" name="email" required placeholder="Your email...">
+              <input id="email" type="email" name="email" placeholder="Email...">
             </div>
             <div class="form-group">
               <label for="email">Password</label>
-              <input id="password" type="password" name="password" required placeholder="Password must be 8 characters long...">
+              <input id="password" type="password" name="password" minlength="8" placeholder="Password must be at least 8 characters long...">
             </div>
             <div class="form-group">
-              <input type="submit" value="Register" class="btn btn--primary">
+              <input id="submit" type="submit" value="Register" class="btn btn--primary">
             </div>
           </form>
         </div>
