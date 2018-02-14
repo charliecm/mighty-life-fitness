@@ -645,9 +645,13 @@ input.form-error, textarea.form-error {
 }
 
 .listings__item-content {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 0;
   padding: 1rem;
+  height: 100%;
   background-color: var(--color-gray-4);
+  line-height: 1.6666;
 }
 
 .listings__item-content--alt {
@@ -665,6 +669,10 @@ input.form-error, textarea.form-error {
 }
 .listings__item-prop:last-of-type {
   margin-bottom: 0.5rem;
+}
+
+.listings__item-cta {
+  margin-top: auto;
 }
 
 /* --------------------------------------------------------------------------*/
