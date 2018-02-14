@@ -568,8 +568,12 @@ input.form-error, textarea.form-error {
   background-image: url(../img/hero-contact.jpg);
   background-position: top center;
 }
+
+.hero--login {
+  background-image: url(../img/hero-login.jpg);
   background-position: top center;
 }
+
 .hero__wrap {
   height: 100%;
 }

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Login to Mighty Life Fitness</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One%7COpen+Sans:400,400i,700" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+  <main class="wrap-all">
+    <div class="wrap-content">
+      <header class="header-bar">
+        <div class="wrap">
+          <a href="index.html" class="logo">
+            Mighty Life<br> Fitness
+          </a>
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="join.html" class="nav-btn">Join Us</a>
+              </li>
+              <li>
+                <ul class="nav__menu">
+                  <li class="nav__item nav__item--toggle">
+                    <a href="#" class="nav-btn">Menu</a>
+                  </li><!--
+                  --><li class="nav__item">
+                    <a href="about.html" class="nav-btn">About</a>
+                  </li><!--
+                  --><li class="nav__item">
+                    <a href="events.html" class="nav-btn">Events</a>
+                  </li><!--
+                  --><li class="nav__item">
+                    <a href="contact.html" class="nav-btn">Contact</a>
+                  </li><!--
+                  --><li class="nav__item">
+                    <a href="login.html" class="nav-btn -active">Login</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <div class="hero hero--login">
+        <div class="hero__wrap wrap">
+          <div class="hero__content">
+            <h1 class="hero__title">
+              Member Login
+            </h1>
+          </div>
+          <p class="hero__citation">
+            Photo by <a href="https://unsplash.com/@bruno_nascimento" target="_blank" class="a-light">Bruno Nascimento</a>
+          </p>
+        </div>
+      </div>
+      <section class="section">
+        <h2 class="hidden" aria-hidden>Login</h2>
+        <form action="dashboard.html" method="post" class="wrap wrap--sm">
+          <div class="form-group">
+            <label for="username">Username</label>
+            <input id="username" type="text" name="username" placeholder="Your username (email)...">
+          </div>
+          <div class="form-group">
+            <label for="email">Password</label>
+            <input id="password" type="password" name="password" placeholder="Your password...">
+          </div>
+          <div class="form-group">
+            <input type="submit" value="Login" class="btn btn--primary">
+          </div>
+        </form>
+      </section>
+    </div>
+    <footer class="footer">
+      <div class="wrap">
+        <p class="footer__cta">
+          Great physique awaits you.<br>
+          <a href="join.html" class="footer__btn-cta btn btn--primary">
+            Join Now
+          </a>
+        </p>
+        <p class="footer_copyright">
+          &copy; 2018
+        </p>
+      </div>
+    </footer>
+  </main>
+  <script src="js/modernizr.js"></script>
+</body>
+</html>
