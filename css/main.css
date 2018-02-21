@@ -13,9 +13,10 @@
  * 10. Hero
  * 11. Others
  * 12. Listings
- * 13. > 560px (md)
- * 13. > 640px (nav-only)
- * 13. > 720px (lg)
+ * 13. Team
+ * 14. > 560px (md)
+ * 15. > 640px (nav-only)
+ * 16. > 720px (lg)
  */
 
 /* --------------------------------------------------------------------------*/
@@ -703,7 +704,44 @@ input.form-error, textarea.form-error, select.form-error {
 }
 
 /* --------------------------------------------------------------------------*/
-/* 13. > 560px (md)                                                          */
+/* 13. Team                                                                  */
+/* --------------------------------------------------------------------------*/
+
+.team-group {
+  margin-bottom: 1.6666rem;
+}
+
+.team-item {
+  margin-bottom: 1rem;
+}
+
+.team-item__content {
+  display: flex;
+  background-color: white;
+  height: 100%;
+}
+
+.team-item__photo {
+  width: 10rem;
+  height: auto;
+  padding: 0.5rem 0.75rem 0.5rem 0.5rem;
+}
+
+.team-item__info {
+  width: 100%;
+  padding-right: 1rem;
+}
+
+.team-item__info > p {
+  margin-bottom: 1rem;
+}
+
+.team-item__info > p:first-child {
+  padding-top: 0.75rem;
+}
+
+/* --------------------------------------------------------------------------*/
+/* 14. > 560px (md)                                                          */
 /* --------------------------------------------------------------------------*/
 
 @media screen and (min-width: 35em) {
@@ -711,7 +749,7 @@ input.form-error, textarea.form-error, select.form-error {
 }
 
 /* --------------------------------------------------------------------------*/
-/* 14. > 640px (nav-only)                                                    */
+/* 15. > 640px (nav-only)                                                    */
 /* --------------------------------------------------------------------------*/
 
 @media screen and (min-width: 40em) {
@@ -752,7 +790,7 @@ input.form-error, textarea.form-error, select.form-error {
 }
 
 /* --------------------------------------------------------------------------*/
-/* 13. > 720px (lg)                                                          */
+/* 16. > 720px (lg)                                                          */
 /* --------------------------------------------------------------------------*/
 
 @media screen and (min-width: 45em) {
