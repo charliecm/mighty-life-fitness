@@ -109,7 +109,7 @@ h1, .h1 {
   font-weight: normal;
 }
 
-h2, h3, strong,
+h2, h3
 .h2, .h3 {
   font-weight: 600;
   margin-bottom:  1.2rem;
@@ -123,6 +123,10 @@ h2, .h2 {
 h3, .h3 {
   font-family: var(--font-primary);
   font-size: 1.3333rem;
+}
+
+strong {
+  font-weight: 600;
 }
 
 small {
@@ -662,14 +666,14 @@ input.form-error, textarea.form-error, select.form-error {
 /* --------------------------------------------------------------------------*/
 
 .listings {
-  margin-bottom: 0;
   padding-left: 0;
+  margin-bottom: 1.6666rem;
   list-style: none;
 }
 
 .listings__item {
   flex-shrink: 0;
-  margin-bottom: 1.6666rem;
+  margin-bottom: 1rem;
 }
 
 .listings__item-content {
