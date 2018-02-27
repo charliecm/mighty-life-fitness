@@ -686,6 +686,15 @@ input.form-error, textarea.form-error, select.form-error {
   background-color: var(--color-gray-4);
   line-height: 1.6666;
 }
+.listings__image-content {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0;
+  padding: 0rem;
+  height: 100%;
+  background-color: var(--color-gray-4);
+  line-height: 1.6666;
+}
 
 .listings__item-content--alt {
   background-color: white;
