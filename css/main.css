@@ -758,6 +758,10 @@ input.form-error, textarea.form-error, select.form-error {
   list-style-position: inside;
 }
 
+.img-item {
+  margin-bottom: 0.5rem;
+}
+
 /* --------------------------------------------------------------------------*/
 /* 14. > 640px (nav-only)                                                    */
 /* --------------------------------------------------------------------------*/
