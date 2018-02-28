@@ -110,9 +110,9 @@ h1, .h1 {
   font-weight: normal;
 }
 
-h2, h3
+h2, h3,
 .h2, .h3 {
-  font-weight: 600;
+  font-weight: bold;
   margin-bottom:  1.2rem;
 }
 
@@ -428,7 +428,7 @@ input.form-error, textarea.form-error, select.form-error {
 .header-bar {
   position: absolute;
   z-index: 10;
-  padding-bottom: 6rem;
+  padding-bottom: 4rem;
   width: 100%;
   background: linear-gradient(0, transparent, rgba(0,0,0,0.9));
 }
@@ -551,8 +551,12 @@ input.form-error, textarea.form-error, select.form-error {
   margin-top: 1rem;
 }
 
-.footer_copyright {
+.footer__copyright {
   margin-bottom: 0;
+}
+
+.footer__note {
+  font-size: 0.75rem;
 }
 
 /* --------------------------------------------------------------------------*/
@@ -686,15 +690,6 @@ input.form-error, textarea.form-error, select.form-error {
   background-color: var(--color-gray-4);
   line-height: 1.6666;
 }
-.listings__image-content {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 0;
-  padding: 0rem;
-  height: 100%;
-  background-color: var(--color-gray-4);
-  line-height: 1.6666;
-}
 
 .listings__item-content--alt {
   background-color: white;
@@ -759,8 +754,12 @@ input.form-error, textarea.form-error, select.form-error {
   padding-top: 0.75rem;
 }
 
+.team-item__info > p:last-child {
+  margin-bottom: 1rem;
+}
+
 .team-item__bio {
-  font-size:  0.875rem;
+  font-size: 0.875rem;
 }
 
 /* --------------------------------------------------------------------------*/
