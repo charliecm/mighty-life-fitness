@@ -378,6 +378,7 @@ input.form-error, textarea.form-error, select.form-error {
   display: inline-block;
   position: relative;
   padding: 0.625rem 1rem 0.5rem 1rem;
+  border-radius: 0;
   border: solid 3px var(--color-night);
   background-color: white;
   font-weight: 600;
