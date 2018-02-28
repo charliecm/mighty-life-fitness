@@ -139,6 +139,7 @@
   margin-bottom: 1.6666rem;
   text-indent: -2rem;
   padding-left: 2rem;
+  word-wrap: break-word;
 }
 
 /* --------------------------------------------------------------------------*/
