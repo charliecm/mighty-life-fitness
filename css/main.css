@@ -12,12 +12,10 @@
  * 08. Navigation
  * 09. Footer
  * 10. Hero
- * 11. Others
- * 12. Listings
- * 13. Team
- * 14. > 560px (md)
- * 15. > 640px (nav-only)
- * 16. > 720px (lg)
+ * 11. Listings
+ * 12. Team
+ * 13. Others
+ * 14. > 640px (nav-only)
  */
 
 /* --------------------------------------------------------------------------*/
@@ -433,9 +431,6 @@ input.form-error, textarea.form-error, select.form-error {
   background: linear-gradient(0, transparent, rgba(0,0,0,0.9));
 }
 
-.logo-wrap {
-}
-
 .logo {
   display: inline-block;
   transition: transform 0.2s;
@@ -608,7 +603,6 @@ input.form-error, textarea.form-error, select.form-error {
   height: 10.25rem; /* 164px */
 }
 
-
 .hero__wrap {
   height: 100%;
 }
@@ -656,20 +650,7 @@ input.form-error, textarea.form-error, select.form-error {
 }
 
 /* --------------------------------------------------------------------------*/
-/* 11. Others                                                                */
-/* --------------------------------------------------------------------------*/
-
-.map {
-  width: 100%;
-}
-
-.grid-list {
-  padding-left: 0.5rem;
-  list-style-position: inside;
-}
-
-/* --------------------------------------------------------------------------*/
-/* 12. Listings                                                              */
+/* 11. Listings                                                              */
 /* --------------------------------------------------------------------------*/
 
 .listings {
@@ -715,7 +696,7 @@ input.form-error, textarea.form-error, select.form-error {
 }
 
 /* --------------------------------------------------------------------------*/
-/* 13. Team                                                                  */
+/* 12. Team                                                                  */
 /* --------------------------------------------------------------------------*/
 
 .team-group {
@@ -765,15 +746,20 @@ input.form-error, textarea.form-error, select.form-error {
 }
 
 /* --------------------------------------------------------------------------*/
-/* 14. > 560px (md)                                                          */
+/* 13. Others                                                                */
 /* --------------------------------------------------------------------------*/
 
-@media screen and (min-width: 35em) {
+.map {
+  width: 100%;
+}
 
+.grid-list {
+  padding-left: 0.5rem;
+  list-style-position: inside;
 }
 
 /* --------------------------------------------------------------------------*/
-/* 15. > 640px (nav-only)                                                    */
+/* 14. > 640px (nav-only)                                                    */
 /* --------------------------------------------------------------------------*/
 
 @media screen and (min-width: 40em) {
@@ -810,13 +796,5 @@ input.form-error, textarea.form-error, select.form-error {
     padding-top: 1.5rem;
     font-size: 1.5rem;
   }
-
-}
-
-/* --------------------------------------------------------------------------*/
-/* 16. > 720px (lg)                                                          */
-/* --------------------------------------------------------------------------*/
-
-@media screen and (min-width: 45em) {
 
 }
